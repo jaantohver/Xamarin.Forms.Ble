@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{4D1B0649-7DED-4357-8271-264A40A6C94D}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XamarinBle</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)EventArgs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IBLEManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IBLEPeripheral.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IBLEService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IBLECharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EventArgs\BLEErrorEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EventArgs\BLEServiceEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EventArgs\BLECharacteristicEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UUID.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BLEManagerState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EventArgs\BLEDiscoveredPeripheralEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EventArgs\BLEPeripheralEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EventArgs\BLEPeripheralErrorEventArgs.cs" />
+  </ItemGroup>
+</Project>
